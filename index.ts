@@ -63,6 +63,10 @@ app.post("/complains", async (req, res) => {
     console.log(e);
   }
 });
+app.get("/privacy", (_, res) => {
+  res.send(`الشروط وسياسة الخصوصية كمجتمع تعاوني، ستكون أولوية موقع وتطبيق Find Caller World دائماً علاقته بالمجتمع والمستخدمين.
+  موقع وتطبيق Find Caller World ملتزم بشدة بأمن وحماية السلامة الشخصية لمستخدمينا وجهات اتصالهم وخدمة موقع وتطبيق Find Caller World، كما هو موضح في هذه الوثيقة.`);
+});
 app.listen(PORT, () => {
   console.log("App is listening on " + PORT);
 });
